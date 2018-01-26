@@ -1,0 +1,37 @@
+name: blog_zero
+version: 0.1.0
+target: src/blog_zero.cr
+
+authors:
+  - Amber <amberframework.org>
+
+crystal: 0.23.1
+
+license: UNLICENSED
+
+targets:
+  blog_zero:
+    main: src/blog_zero.cr
+
+  amber:
+    main: lib/amber/src/amber/cli.cr
+
+dependencies:
+  amber:
+    github: amberframework/amber
+
+  granite_orm:
+    github: amberframework/granite-orm
+
+  quartz_mailer:
+    github: amberframework/quartz-mailer
+
+  jasper_helpers:
+    github: amberframework/jasper-helpers
+
+  pg:
+    github: will/crystal-pg
+ 
+development_dependencies:
+  amber_spec:
+    github: amberframework/amber-spec
